@@ -76,22 +76,21 @@
   ##### Signatures
   each of them computes 
   
-  $R = \prod_{i=0}^n R_i$, $c = H(\tilde{X}, R, m) $
+  $R =\prod_{i=0}^n R_i$, $c = H(\tilde{X}, R, m) $
   
-  - where $\tilde{X}= \prod_{i=1}^{n} X_{i} is the product
-  of individual public keys
+  $\tilde{X}= \prod_{i=0}^n X_{i}$
   
  a partial signature:$ s_{i} = r_{i} + cx_{i}$ 
  
  partial signatures are then combined into a single signature $(R, s)$
  
- - where $s = \sum_{i=1}^{n} s_{i} \pmod{p}$
+ - where $s = \sum_{i=1}^n s_{i} \pmod{p}$
  +++
  ##### The validity of a signature (R,s)
  
   $g_{s} = R \tilde{X}$
   
-  - where $\tilde{X} =  \prod_{i=1}^{n} X_{i} and c = H(\tilde{X},R,m)$
+  - where $\tilde{X} =  \prod_{i=1}^n X_{i} and c = H(\tilde{X},R,m)$
   
   $\tilde{X}$:key aggregation
   
@@ -99,7 +98,7 @@
 +++
  ##### vulnerable to a rogue-key attack
  
- a corrupted signer sets its public key to $X{1} = g^x_{1} ( \prod_{i=1}^{n} X_{i})^{−1}
+ a corrupted signer sets its public key to $X{1} = g^x_1 ( \prod_{i=1}^n X_{i})^{−1}
  
   
 ---

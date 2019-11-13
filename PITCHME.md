@@ -1,4 +1,4 @@
-### Simple Schnorr Multi-Signatures with Applications to Bitcoin(Pre)
+### Simple Schnorr Multi-Signatures with Applications to Bitcoin(1)
 
 ---
 
@@ -13,6 +13,7 @@
 - Schnorr signatures
 - discrete logarithm problem（）
 - forking lemma
+- rounge key attack
 
 ---
 #### multi-signatures
@@ -39,9 +40,81 @@
 
 ---
 ##### Scheme of Schnorr
+
+
  a cyclic group $G$ of prime order $p$, 
  
- a generator $g$ of G,and a hash function $H$
+ a generator $g$ of $G$,and a hash function $H$
+ 
+ private/public key=$(x,X)\in {1,2\cdots,p}\times G$
+ 
+ $X=g^x$
+ 
+ 
+ +++
+ #### sign a message and checking validity
+ 
+ signer draws a random integer $r \in Z_{p}$ 
+ 
+ computes $R = g^r,c=H(X,R,m) and then, s=r+cx$
+ 
+ The signature=$(R,s)$
+ 
+ ###### verifying
+ $g^s=RX^c$
+ 
+ ---
+  ##### Schnorr multi-signature scheme
+  
+  a group of n signers want to cosign a message m
+  
+  multiset of all their public key
+  
+  - $L={X_{1}=g^x_{1},X_{2}=g^x_{2},\cdots,X_{n}=g^x_{n}}$
+  
+  +++
+  ##### Signatures
+  each of them computes 
+  
+  $R = \prod_{i=1}^{n} R_{i}$, $c = H(\tilde{X}, R, m) $
+  
+  - where $\tilde{X}= \prod_{i=1}^{n} X_{i} is the product
+  of individual public keys
+  
+ a partial signature:$ s_{i} = r_{i} + cx_{i}$ 
+ 
+ partial signatures are then combined into a single signature $(R, s)$
+ 
+ - where $s = \sum_{i=1}^{n} s_{i} \pmod{p}$
+ +++
+ ##### The validity of a signature (R,s)
+ 
+  $g_{s} = R \tilde{X}$
+  
+  - where $\tilde{X} =  \prod_{i=1}^{n} X_{i} and c = H(\tilde{X},R,m)$
+  
+  $\tilde{X}$:key aggregation
+  
+  
+ +++
+ ##### vulnerable to a rogue-key attack
+ 
+ a corrupted signer sets its public key to $X{1} = g^x_{1} ( \prod_{i=1}^{n} X_{i})^{−1}
+ 
+  
+---
+  
+  
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

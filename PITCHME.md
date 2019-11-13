@@ -46,7 +46,7 @@
  
  a generator $g$ of $G$,and a hash function $H$
  
- private/public key=$(x,X)\in {1,2\cdots,p}\times G$
+ private/public key=$(x,X)\in {{1,2\cdots,p}}\times G$
  
  $X=g^x$
  
@@ -54,7 +54,7 @@
 +++
  #### sign a message and checking validity
  
- signer draws a random integer $r \in Z_{p}$ 
+ signer draws a random integer $r \in Z_p$ 
  
  computes $R = g^r,c=H(X,R,m) and then, s=r+cx$
  
@@ -70,13 +70,13 @@
   
   multiset of all their public key
   
-  - $L={X_{1}=g^x_{1},X_{2}=g^x_{2},\cdots,X_{n}=g^x_{n}}$
+  - $L={X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n}$
   
 +++
   ##### Signatures
   each of them computes 
   
-  $R = \prod_{i=1}^{n} R_{i}$, $c = H(\tilde{X}, R, m) $
+  $R = \prod_{i=0}^n R_i$, $c = H(\tilde{X}, R, m) $
   
   - where $\tilde{X}= \prod_{i=1}^{n} X_{i} is the product
   of individual public keys

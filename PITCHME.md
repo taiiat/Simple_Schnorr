@@ -85,7 +85,9 @@
  then,combined into a single signature $(R, s)$
  
  - where $s = \sum_{i=1}^n s_{i} \pmod{p}$
- +++
+ 
+ 
++++
  ##### The validity of a signature (R,s)
  
   $g_{s} = R \tilde{X}$

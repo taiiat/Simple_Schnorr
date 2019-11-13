@@ -78,11 +78,11 @@
   
   $R =\prod_{i=0}^n R_i$, $c = H(\tilde{X}, R, m) $
   
-  $\tilde{X}= \prod_{i=0}^n X_{i}$
+  $\tilde{X}= \prod_{i=0}^n X_i$
   
  a partial signature:$ s_{i} = r_{i} + cx_{i}$ 
  
- partial signatures are then combined into a single signature $(R, s)$
+ then,combined into a single signature $(R, s)$
  
  - where $s = \sum_{i=1}^n s_{i} \pmod{p}$
  +++
@@ -90,7 +90,7 @@
  
   $g_{s} = R \tilde{X}$
   
-  - where $\tilde{X} =  \prod_{i=1}^n X_{i} and c = H(\tilde{X},R,m)$
+  - where $\tilde{X} =  \prod_{i=1}^n X_i and c = H(\tilde{X},R,m)$
   
   $\tilde{X}$:key aggregation
   

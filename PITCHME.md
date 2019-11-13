@@ -73,7 +73,7 @@
   - $L={X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n}$
   
 +++
-  #### Signatures 1stage
+  #### Preparetion for Signatures 
   Each cosigner
   randomly generates and communicates to others a share Ri = gri 
   
@@ -86,7 +86,7 @@
   
   
 +++
-  
+  #### Making simple Signature
    a partial signature:$ s_i = r_i + cx_i$ 
  
  then,combined into a single signature $(R, s)$
@@ -105,11 +105,12 @@
   
   $\tilde{X}$:key aggregation
   
-  
 +++
  ##### vulnerable to a rogue-key attack
  
  a corrupted signer sets its public key to $\displaystyle X{1} = g^x_1 ( \prod_{i=1}^n X_{i})^−1$
+ ↓
+ allowing him to produce signatures for public keys ${X_1, . . . , X_n}$ by himself.
  
   
 ---

@@ -119,14 +119,37 @@ for public keys {$X_1, . . . , X_n$} by himself.
  
   
 ---
-##### detail
- $\begin{array}{l}
-A & B & C \\ \hline
-1 & 2 & 3
-\end{array}$
+#### detail
  
 ---
+#### Improvement to MOR01
+
+main idea
+- to have each cosigner use a distinct “challenge” ci when computing
+their partial signature $s_i = r_i + c_ix_i$, defined as $c_i = H(⟨L⟩, Xi, R, m)$
+
+- $⟨L⟩$ is some unique encoding of the multiset of
+public keys $L = \{X_1,\cdots, X_n\}$
+
+
+###### HOWEVER
+ NO key aggregation
  
+---
+##### new multi-signature scheme(MuSig)
+
+signer computes
+
+$a_i=H_{agg}(L,X_i)$ and then,  $\displaystyle \tilde{X}= \prod_{i=0}^n X_i^a_i$
+
+
+
+
+
+
+
+
+
  
  
  

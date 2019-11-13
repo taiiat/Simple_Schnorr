@@ -80,11 +80,11 @@
   
   $\tilde{X}= \prod_{i=0}^n X_i$
   
- a partial signature:$ s_{i} = r_{i} + cx_{i}$ 
+ a partial signature:$ s_i = r_i + cx_i$ 
  
  then,combined into a single signature $(R, s)$
  
- - where $s = \sum_{i=1}^n s_{i} \pmod{p}$
+ - where $s = \sum_{i=1}^n s_i \pmod{p}$
  
  
 +++

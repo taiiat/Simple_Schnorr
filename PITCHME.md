@@ -97,22 +97,24 @@
 
  
 +++
- ##### The validity of a signature (R,s)
+ #### The validity of a signature (R,s)
  
   $g_{s} = R \tilde{X}$
   
   - where $\tilde{X} =  \prod_{i=1}^n X_i and c = H(\tilde{X},R,m)$
   
-  $\tilde{X}$:key aggregation
+  ###### $\tilde{X}$:key aggregation
   
 +++
 ##### vulnerable to a rogue-key attack
  
-a corrupted signer sets its public key to $\displaystyle X{1} = g^x_1 ( \prod_{i=1}^n X_{i})^−1$
+a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1 ( \prod_{i=1}^n X_i)^−1$
  
  ###### ↓
 
-allowing him to produce signatures for public keys ${X_1, . . . , X_n}$ by himself.
+allowing him to produce signatures 
+
+for public keys ${X_1, . . . , X_n}$ by himself.
  
  
   

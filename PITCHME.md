@@ -51,7 +51,7 @@
  $X=g^x$
  
  
- +++
++++
  #### sign a message and checking validity
  
  signer draws a random integer $r \in Z_{p}$ 
@@ -63,7 +63,7 @@
  ###### verifying
  $g^s=RX^c$
  
- ---
+---
   ##### Schnorr multi-signature scheme
   
   a group of n signers want to cosign a message m
@@ -72,7 +72,7 @@
   
   - $L={X_{1}=g^x_{1},X_{2}=g^x_{2},\cdots,X_{n}=g^x_{n}}$
   
-  +++
++++
   ##### Signatures
   each of them computes 
   
@@ -96,7 +96,7 @@
   $\tilde{X}$:key aggregation
   
   
- +++
++++
  ##### vulnerable to a rogue-key attack
  
  a corrupted signer sets its public key to $X{1} = g^x_{1} ( \prod_{i=1}^{n} X_{i})^{−1}

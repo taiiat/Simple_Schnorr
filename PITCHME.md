@@ -120,12 +120,11 @@ for public keys {$X_1, . . . , X_n$} by himself.
   
 ---
 ##### detail
- \begin{array}{lc|r}
+ $\begin{array}{lc|r}
 a+b & c & d+e \\
 A & B & C \\ \hline
 1 & 2 & 3
-\end{array}
-
+\end{array}$
  
 ---
  

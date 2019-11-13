@@ -76,7 +76,7 @@
   ##### Signatures
   each of them computes 
   
-  $\displaystyle R =\prod_{i=0}^n R_i$ ,c = H(\tilde{X}, R, m) $
+  $\displaystyle R =\prod_{i=0}^n R_i ,c = H(\tilde{X}, R, m) $
   
   $\displaystyle \tilde{X}= \prod_{i=0}^n X_i$
   

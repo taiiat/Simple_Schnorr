@@ -76,9 +76,16 @@
   ##### Signatures
   each of them computes 
   
-  $R =\prod_{i=0}^n R_i$, $c = H(\tilde{X}, R, m) $
+  $\displaystyle R =\prod_{i=0}^n R_i$ ,c = H(\tilde{X}, R, m) $
   
-  $\tilde{X}= \prod_{i=0}^n X_i$
+  $\displaystyle \tilde{X}= \prod_{i=0}^n X_i$
+  
+   a partial signature:$ s_i = r_i + cx_i$ 
+ 
+ then,combined into a single signature $(R, s)$
+ 
+ - where $\displaystyle s = \sum_{i=0}^n s_i \pmod{p}$
+ 
   
 
  

@@ -120,15 +120,12 @@ for public keys {$X_1, . . . , X_n$} by himself.
   
 ---
 ##### detail
- 
- math
-\begin{array}{rr}
+ \begin{array}{rr}
 & 12345\
 +&6789\
 \hline
 &13023
 \end{array}
-
 
  
 ---

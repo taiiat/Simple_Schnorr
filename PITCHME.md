@@ -114,7 +114,7 @@ a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1 ( \prod_{i=
 
 allowing him to produce signatures 
 
-for public keys $\{X_1, . . . , X_n\}$ by himself.
+for public keys $\{X_1, . . . , X_n \}$ by himself.
  
  
   
@@ -130,7 +130,7 @@ for public keys $\{X_1, . . . , X_n\}$ by himself.
 \end{array}
 
  
- 
+---
  
  
  

@@ -120,11 +120,9 @@ for public keys {$X_1, . . . , X_n$} by himself.
   
 ---
 ##### detail
- \begin{array}{rr}
-& 12345\
-+&6789\
-\hline
-&13023
+ \begin{array}{lcr}
+a+b & c & d+e \\
+A & B & C
 \end{array}
 
  

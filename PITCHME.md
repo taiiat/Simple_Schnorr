@@ -60,7 +60,7 @@
  
  The signature=$(R,s)$
  
- ###### verifying
+ ##### verifying
  $g^s=RX^c$
  
 ---
@@ -73,12 +73,19 @@
   - $L={X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n}$
   
 +++
-  ##### Signatures
+  #### Signatures 1stage
+  Each cosigner
+  randomly generates and communicates to others a share Ri = gri 
+  
   each of them computes 
   
   $\displaystyle R =\prod_{i=0}^n R_i ,c = H(\tilde{X}, R, m) $
   
   $\displaystyle \tilde{X}= \prod_{i=0}^n X_i$
+  
+  
+  
++++
   
    a partial signature:$ s_i = r_i + cx_i$ 
  
@@ -102,7 +109,7 @@
 +++
  ##### vulnerable to a rogue-key attack
  
- a corrupted signer sets its public key to $X{1} = g^x_1 ( \prod_{i=1}^n X_{i})^{−1}
+ a corrupted signer sets its public key to $\displaystyle X{1} = g^x_1 ( \prod_{i=1}^n X_{i})^−1$
  
   
 ---

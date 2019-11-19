@@ -169,7 +169,7 @@ The signature is σ = (R, s).
 
 the verifier computes $a_i = H_{agg}(L,X_i)$
 
-![alt](s1.png)
+![alt](s2.png)
 
 ---
 ##### Simpler Key Aggregation Variants.

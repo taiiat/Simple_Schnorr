@@ -136,14 +136,63 @@ public keys $L = \{X_1,\cdots, X_n\}$
  NO key aggregation
  
 ---
-##### new multi-signature scheme(MuSig)
+### new multi-signature scheme(MuSig)
 
-signer computes
++++
+
+##### signer computes
 
 $a_i=H_{agg}(L,X_i)$ and then,  $\displaystyle \tilde{X}= \prod_{i=0}^n X_i^a_i$
 
 
-generates a random $r1 ←$ Z_p$, computes$ R_1 = g^{r_1}, t1 = H_{com}(R_1)$
+generates a random $r1 ←$ Z_p$, computes$ R_1 = g^{r_1}, t_1 = H_{com}(R_1)$
+
+$t_i$を受け取ったら$R_1$を他者におくり、$t_i = H_{com}(R_i)$を確認する
++++
+$c=H_{sig}(R,m,\tilde{X})$ 
+
+$\displaystyle R= \prod_{i=1}^n R_i$
+
+$s_1=r_1+ca_1x_1 \pmod{p}$
+
+s_1を他者におくり、s_iを受け取る
+
+$\displaystyle s= \sum_{i=0}^n X_i^a_i$
+
+The signature is σ = (R, s).
+
+
+
+---
+##### Verification
+
+the verifier computes $a_i = H_agg(L,X_i)$
+
+$g^s=R\displaystyle \prod_{i=1}^n X_i^a_ic=R \tilde{X}^c$
+
+---
+##### Simpler Key Aggregation Variants.
+
+$H_agg(X_i)$ is insecure when
+multiple keys are controlled by the attacker.
+
+THe aggregate of just that key alone is $X = X^{H_agg(X_1)}$
+
+Wagner’s algorithmをつかうと、O(2^{2\sqrt{k}})で公開鍵を作れる
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

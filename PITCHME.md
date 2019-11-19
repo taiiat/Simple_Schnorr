@@ -139,8 +139,7 @@ public keys $L = \{X_1,\cdots, X_n\}$
 +++
 
 ##### signer computes
-
-$a_i=H_{agg}(L,X_i)$ 
+$H_{agg}(X_i)$
 
 $\tilde{X}= \prod_{i=0}^n X_i^{a_i}$
   

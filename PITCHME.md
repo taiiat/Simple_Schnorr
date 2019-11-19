@@ -140,7 +140,9 @@ public keys $L = \{X_1,\cdots, X_n\}$
 
 ##### signer computes
 
-$a_i=H_{agg}(L,X_i)$ and then, $\tilde{X}= \prod_{i=0}^n X_i^a_i$
+$a_i=H_{agg}(L,X_i)$ and then, 
+
+$\tilde{X}= \prod_{i=0}^n X_i^a_i$
 
 
 generates a random $r_1 ←$ Z_p$, computes$ R_1 = g^{r_1}, t_1 = H_{com}(R_1)$

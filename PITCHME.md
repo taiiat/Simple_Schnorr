@@ -169,7 +169,7 @@ The signature is σ = (R, s).
 
 the verifier computes $a_i = H_{agg}(L,X_i)$
 
-$g^s=R$ $\displaystyle \prod_{i=1}^n X_i^a_ic=R $
+![alt](s1.png)
 
 ---
 ##### Simpler Key Aggregation Variants.

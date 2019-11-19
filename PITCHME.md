@@ -108,7 +108,7 @@ $\tilde{X}$:key aggregation
 +++
 ##### vulnerable to a rogue-key attack
  
-a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1 ( \prod_{i=1}^n X_i)^{−1}$
+a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1 ( \prod_{i=1}^n X_i)^−1$
  
  ###### ↓
 
@@ -117,9 +117,7 @@ allowing him to produce signatures
 for public keys {$X_1, . . . , X_n$} by himself.
  
  
-  
----
-#### detail
+ 
  
 ---
 #### Improvement to MOR01
@@ -142,10 +140,10 @@ public keys $L = \{X_1,\cdots, X_n\}$
 
 ##### signer computes
 
-$a_i=H_{agg}(L,X_i)$ and then,  $\displaystyle \tilde{X}= \prod_{i=0}^n X_i^a_i$
+$a_i=H_{agg}(L,X_i)$ and then, $\displaystyle \tilde{X}= \prod_{i=0}^n X_i^a_i$
 
 
-generates a random $r1 ←$ Z_p$, computes$ R_1 = g^{r_1}, t_1 = H_{com}(R_1)$
+generates a random $r_1 ←$ Z_p$, computes$ R_1 = g^{r_1}, t_1 = H_{com}(R_1)$
 
 $t_i$を受け取ったら$R_1$を他者におくり、$t_i = H_{com}(R_i)$を確認する
 +++
@@ -166,20 +164,21 @@ The signature is σ = (R, s).
 ---
 ##### Verification
 
-the verifier computes $a_i = H_agg(L,X_i)$
+the verifier computes $a_i = H_{agg}(L,X_i)$
 
 $g^s=R\displaystyle \prod_{i=1}^n X_i^a_ic=R \tilde{X}^c$
 
 ---
 ##### Simpler Key Aggregation Variants.
 
-$H_agg(X_i)$ is insecure when
+$H_{agg}(X_i)$ is insecure when
 multiple keys are controlled by the attacker.
 
-THe aggregate of just that key alone is $X = X^{H_agg(X_1)}$
+THe aggregate of just that key alone is $X = X^{H_{agg}(X_1)}$
 
 Wagner’s algorithmをつかうと、O(2^{2\sqrt{k}})で公開鍵を作れる
 
+---
 
 
 

@@ -146,7 +146,9 @@ $\tilde{X}= \prod_{i=0}^n X_i^{a_i}$
   
 
 
-generates a random $r_1 ←$ Z_p$, computes$R_1=g^{r_1}$,$t_1 = H_{com}(R_1)$
+generates a random $r_1 ←$ Z_p$, computes$R_1=g^{r_1}$,
+
+$t_1 = H_{com}(R_1)$
 
 $t_i = H_{com}(R_i)$を確認する
 

@@ -179,11 +179,13 @@ THe aggregate of just that key alone is $X = X^{H_{agg}(X_1)}$
 Wagner’s algorithmをつかうと、O(2^{2\sqrt{k}})で公開鍵を作れる
 
 ---
+use Wagner’s algorithm [Wag02] to find n − 1 integers y2 , . . . , yn
+n such that $\displaystyle \sum_{i=2}^n H_{agg}(\tilde{X_hg^y_i})$
 
 
+![alt](s1.png)
 
-
-
+(内積？)
 
 
 

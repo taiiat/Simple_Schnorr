@@ -81,7 +81,7 @@
   
   $\displaystyle R =\prod_{i=0}^n R_i ,c = H(\tilde{X}, R, m) $
   
-  $\displaystyle \tilde{X}= \prod_{i=0}^n X_i$
+  $\displaystyle \tilde{X}= \prod_{i=1}^n X_i$
   
   
   
@@ -140,12 +140,13 @@ public keys $L = \{X_1,\cdots, X_n\}$
 
 ##### signer computes
 
-$a_i=H_{agg}(L,X_i)$ and then, 
+$a_i=H_{agg}(L,X_i)$ 
 
-$\tilde{X}= \prod_{i=0}^n X_i^a_i$
+ $\tilde{X}= \prod_{i=0}^n X_i^a_i$
+  
 
 
-generates a random $r_1 ←$ Z_p$, computes$ R_1 = g^{r_1}, t_1 = H_{com}(R_1)$
+generates a random $r_1 ←$ Z_p$, computes$ R_1 = g^r_1$,$ t_1 = H_{com}(R_1)$
 
 $t_i$を受け取ったら$R_1$を他者におくり、$t_i = H_{com}(R_i)$を確認する
 

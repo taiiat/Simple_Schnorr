@@ -149,7 +149,7 @@ generates a random $r_1 ← Z_p$
 
 $R_1=g^{r_1}$,
 
-$t_1=H_{com}(R_1)$
+$c=H_{agg}(X_i,L)$
 
 $t_i = H_{com}(R_i)$を確認
 +++

@@ -108,7 +108,7 @@ $pk′_{n−t+1}, . . . , pk′_{n}$を計算して不正な${pk_1,...,pk_{n−t
 +++
  #### The validity of a signature $(R,s)$
  
- $g_{s} = R \tilde{X}$
+ $g_{s} = R \tilde{X}^c$
   
  $\tilde{X} =  \prod_{i=1}^n X_i $ and $c = H(\tilde{X},R,m)$
   
@@ -174,6 +174,7 @@ The signature is $σ = (R, s)$
 ##### Verification
 
 the verifier computes $a_i = H_{agg}(L,X_i)$
+
 
 ![alt](s2.png)
 

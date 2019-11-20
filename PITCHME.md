@@ -119,7 +119,7 @@ $\tilde{X}$:key aggregation
  
 a corrupted signer sets its public key to 
  
-
+  ![alt](s4.png)
  
  ###### ↓
 
@@ -243,6 +243,8 @@ each signer must ensure that whenever any $R_j$ sent by other cosigners or the m
 his ri value changes unpredictably.
 
 randomness or a counter into the function fを導入することで解決
+
+
 
 
 

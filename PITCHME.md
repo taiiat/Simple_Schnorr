@@ -121,7 +121,7 @@ a corrupted signer sets its public key to
  
   ![alt](s5.png)
  
- ###### ↓
+ 
 
 allowing him to produce signatures 
 

@@ -6,6 +6,7 @@
 1.新しいマルチシグなSchnorr署名の提案
   - より効率的かつシンプル
   - key aggregationの仕組みを追加（重要）
+    - rogue-key attack対策
 
 ---
 #### key words
@@ -13,7 +14,7 @@
 - Schnorr signatures
 - discrete logarithm problem（）
 - forking lemma
-- rounge key attack
+- rogue key attack
 
 ---
 #### multi-signatures
@@ -36,6 +37,13 @@
 
 - 存在的偽造不可
   - どのような効率的なアルゴリズムも検証鍵 pk だけを用いて与えられたメッセージ m に対して妥当な署名σをつくることは不可
+  
+---
+#### rogue-key attack
+
+n人のグループのうち $1 ≤ t < n$
+
+use public keys $pk′_{n−t+1}, . . . , pk′_{n} $computed as functions of public keys of honest users $pk_1,...,pk_{n−t}$, allowing them to easily produce forgeries for the set of public keys ${pk_1,...,pk_{n−t},pk′_{n−t+1},...,pk′_{n}}$
 
 
 ---
@@ -64,7 +72,7 @@
  $g^s=RX^c$
  
 ---
-  ##### Schnorr multi-signature scheme
+ ##### Schnorr multi-signature scheme
   
   a group of n signers want to cosign a message m
   
@@ -73,7 +81,7 @@
   - $L={X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n}$
   
 +++
-  #### Preparetion for Signatures 
+#### Preparetion for Signatures 
   Each cosigner
   randomly generates and communicates to others a share Ri = gri 
   
@@ -86,7 +94,7 @@
   
   
 +++
-  #### Making simple Signature
+#### Making simple Signature
    a partial signature:$ s_i = r_i + cx_i$ 
  
  then,combined into a single signature $(R, s)$
@@ -160,11 +168,11 @@ $\displaystyle R= \prod_{i=1}^n R_i$
 
 $s_1=r_1+ca_1x_1 \pmod{p}$
 
-s_1を他者におくり、s_iを受け取る
+$s_1$を他者におくり、$s_i$を受け取る
 
 $\displaystyle s= \sum_{i=0}^n X_i^a_i$
 
-The signature is σ = (R, s).
+The signature is $σ = (R, s)$
 
 
 
@@ -193,6 +201,30 @@ n such that $\displaystyle \sum_{i=2}^n H_{agg}(\tilde{X_hg^y_i})$
 ![alt](s1.png)
 
 (内積？)
+---
+#### Derandomized Signing
+
+To avoid the need for a strong random number generation at signing time, 
+
+the creation of the random values $r_i$ is often done using an algorithm 
+
+which use determistic function
+
++++
+
+Assume Alice and Bob, holding respective key pairs $(x_1,g^x_1)$ and $(x_2,g^x_2)$
+
+Alice:R_1,Bob:R_2
+
+- Alice computes $R=R_1R_2$
+               $c = H_{sig}(\tilde{X},R,m)$
+               $s_1=r_1+ca_1x_1  \pmod{p}$
+
+- Alice again sends R1. Bob responds with R2′ ̸= R2.
+
+- Alice computes $c′ = H_{sig}(\tlide X,R_1R_2^′ ,m)$ and $s′_1 = r_1 + c′a_1x_1$, and sends $s′_1$
+               
+
 
 
 

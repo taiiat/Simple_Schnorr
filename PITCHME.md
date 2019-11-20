@@ -119,13 +119,13 @@ $\tilde{X}$:key aggregation
  
 a corrupted signer sets its public key to 
  
-  ![alt](s7.png)
+![alt](s7.png)
  
  
 
 allowing him to produce signatures 
 
-for ${p_i}$
+
 
 
  

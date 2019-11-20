@@ -225,7 +225,7 @@ Alice:R_1,Bob:R_2
 - Alice computes $c′ = H_{sig}(\tlide X,R_1R_2^′ ,m)$ and $s′_1 = r_1 + c′a_1x_1$, and sends $s′_1$
                
 
-
+---
 
 
 

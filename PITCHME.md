@@ -119,7 +119,7 @@ $\tilde{X}$:key aggregation
  
 a corrupted signer sets its public key to 
 
-$\X_1 = g^x_1$$ \prod_{i=1}^n X_i $
+$\X_1 =  \prod_{i=1}^n X_i $
  
  ###### ↓
 

@@ -125,8 +125,7 @@ a corrupted signer sets its public key to
 
 allowing him to produce signatures 
 
-for public keys {$X_1, . . . , X_n$} by himself.
- 
+
  
  
  

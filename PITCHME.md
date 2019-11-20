@@ -117,7 +117,7 @@ $\tilde{X}$:key aggregation
 +++
 ##### vulnerable to a rogue-key attack
  
-a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1  \prod_{i=1}^n X_i^−1$
+a corrupted signer sets its public key to $\X_1 = g^x_1 \prod_{i=1}^n X_i$
  
  ###### ↓
 

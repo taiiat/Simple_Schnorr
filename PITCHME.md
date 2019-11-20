@@ -82,7 +82,7 @@ $pk′_{n−t+1}, . . . , pk′_{n}$を計算して不正な${pk_1,...,pk_{n−t
   - $L={X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n}$
   
 +++
-#### Preparetion for Signatures 
+#### Preparetion for Signatures() 
   Each cosigner
   randomly generates and communicates to others a share Ri = gri 
   
@@ -131,7 +131,7 @@ for public keys {$X_1, . . . , X_n$} by himself.
  
  
 ---
-#### Improvement to MOR01
+#### Improvement for MOR01
 
 main idea
 - to have each cosigner use a distinct “challenge” ci when computing

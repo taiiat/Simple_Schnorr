@@ -41,10 +41,11 @@
 ---
 #### rogue-key attack
 
-n人のグループのうち $1 ≤ t < n$
+n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当なuserの$pk_1,...,pk_{n−t}$を利用して
 
-use public keys $pk′_{n−t+1}, . . . , pk′_{n} $computed as functions of public keys of honest users $pk_1,...,pk_{n−t}$, allowing them to easily produce forgeries for the set of public keys ${pk_1,...,pk_{n−t},pk′_{n−t+1},...,pk′_{n}}$
+$pk′_{n−t+1}, . . . , pk′_{n}$を計算して不正な${pk_1,...,pk_{n−t},pk′_{n−t+1},...,pk′_{n}}$
 
+公開鍵の集合の作成を許してしまう。
 
 ---
 ##### Scheme of Schnorr
@@ -116,7 +117,7 @@ $\tilde{X}$:key aggregation
 +++
 ##### vulnerable to a rogue-key attack
  
-a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1 ( \prod_{i=1}^n X_i)^−1$
+a corrupted signer sets its public key to $\displaystyle X_1 = g^x_1  \prod_{i=1}^n X_i^−1$
  
  ###### ↓
 
@@ -184,14 +185,14 @@ the verifier computes $a_i = H_{agg}(L,X_i)$
 ![alt](s2.png)
 
 ---
-##### Simpler Key Aggregation Variants.
+##### Simpler 
 
 $H_{agg}(X_i)$ is insecure when
 multiple keys are controlled by the attacker.
 
 THe aggregate of just that key alone is $X = X^{H_{agg}(X_1)}$
 
-Wagner’s algorithmをつかうと、O(2^2\sqrt{k})で公開鍵を作れる
+Wagner’s algorithmをつかうと、$O(2^2\sqrt{k})$timeでrogue-key attack
 
 ---
 use Wagner’s algorithm [Wag02] to find $n − 1$ integers $y_2 , . . . , y_n$
@@ -202,13 +203,15 @@ n such that $\displaystyle \sum_{i=2}^n H_{agg}(\tilde{X_hg^y_i})$
 
 (内積？)
 ---
-#### Derandomized Signing
+### Derandomized Signing
 
-To avoid the need for a strong random number generation at signing time, 
+##### To avoid a strong random number generation  
 
 the creation of the random values $r_i$ is often done using an algorithm 
 
-which use determistic function
+which use determistic function(*)
+
+(*)given a particular input, will always produce the same output
 
 +++
 
@@ -216,16 +219,28 @@ Assume Alice and Bob, holding respective key pairs $(x_1,g^x_1)$ and $(x_2,g^x_2
 
 Alice:R_1,Bob:R_2
 
++++
+
 - Alice computes $R=R_1R_2$
                $c = H_{sig}(\tilde{X},R,m)$
-               $s_1=r_1+ca_1x_1  \pmod{p}$
+               $s_1=r_1+ca_1x_1 \pmod{p}$
 
-- Alice again sends R1. Bob responds with R2′ ̸= R2.
+- Alice again sends R1. Bob responds with $R2′\neq R2$
 
-- Alice computes $c′ = H_{sig}(\tlide X,R_1R_2^′ ,m)$ and $s′_1 = r_1 + c′a_1x_1$, and sends $s′_1$
-               
+- Alice computes $c′ = H_{sig}(\tlide{X},R_1R_2^′ ,m)$ and 
+
+  $s′_1 = r_1 + c′a_1x_1$, and sends $s′_1$
+  
+- Bob can $x_1=\frac{s_1-s′_1}{a_1(c-c′)}\pmod{p} $ 
 
 ---
+##### To avoid this problem
+
+each signer must ensure that whenever any $R_j$ sent by other cosigners or the message m changes,
+
+his ri value changes unpredictably.
+
+randomness or a counter into the function fを導入することで解決
 
 
 

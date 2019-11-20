@@ -125,12 +125,6 @@ a corrupted signer sets its public key to
 
 allowing him to produce signatures 
 
-
-
-
- 
- 
- 
 ---
 #### Improvement for MOR01
 
@@ -155,11 +149,9 @@ $c=H_{agg}(X_i,L)$
 
 $\tilde{X}= \prod_{i=0}^n X_i^{a_i}$
   
-
-
 generates a random $r_1 ← Z_p$
 
-$R_1=g^{r_1}$,
+$R_1=g^r_1$,
 
 $t_1=H_{com}(R_1)$
 
@@ -177,8 +169,6 @@ $s_1$を他者におくり、$s_i$を受け取る
 $\displaystyle s= \sum_{i=0}^n X_i^a_i$
 
 The signature is $σ = (R, s)$
-
-
 
 ---
 ##### Verification

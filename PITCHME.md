@@ -85,7 +85,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
   
   multiset of all their public key
   
-  - $L=\{X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n\}$
+  - $L$=\{$X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n$\}
   
 +++
 #### Preparetion for Signatures() 

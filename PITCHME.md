@@ -231,6 +231,7 @@ Alice:R_1,Bob:R_2
                $s_1=r_1+ca_1x_1 \pmod{p}$
 
 - Alice again sends R1. Bob responds with $R2′\neq R2$
++++
 
 - Alice computes $c′ = H_{sig}(\tlide{X},R_1R_2^′ ,m)$ and 
 

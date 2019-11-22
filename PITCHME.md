@@ -47,7 +47,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
 
 \{$pk_{n−t+1},\cdots,pk'_n$}を作成
 
-\{$pk_1,\cdots,pk'_{n−t},pk'_{n−t+1},\cdots,pk'_n\$}
+\{$pk_1,\cdots,pk'_{n−t},pk'_{n−t+1},\cdots,pk'_n$}
 
 偽の公開鍵の集合の作成を許してしまう。
 

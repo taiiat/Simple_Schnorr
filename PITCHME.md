@@ -200,7 +200,7 @@ use Wagner’s algorithm [Wag02] to find $n − 1$ integers
 
 \{$y_2 ,\cdots, y_n$\}
 
-n such that $\sum_{i=2}^n H_a(X_hg^{y_i})$
+n such that $\sum_{i=2}^n H_a_g(X_hg^{y_i})$
 
 $\sum_{i=0}^n H_{agg}(X_1)$
 

@@ -41,11 +41,11 @@
 ---
 #### rogue-key attack
 
-n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当なuserの公開鍵を利用して
+n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当なuserの公開鍵を利用して$
 
-$\{p_{n−t+1},\cdots,p_{n}\}$
+\{x_{n−t+1},\cdots,x_{n}\}
 
-$\{p_1,\cdots,p_{n−t},p_{n−t+1},\cdots,p′_{n}\}$
+\{p_1,\cdots,p_{n−t},p_{n−t+1},\cdots,p′_{n}\}$
 
 公開鍵の集合の作成を許してしまう。
 
@@ -57,7 +57,7 @@ $\{p_1,\cdots,p_{n−t},p_{n−t+1},\cdots,p′_{n}\}$
  
  a generator $g$ of $G$,and a hash function $H$
  
- private/public key=$(x,X)\in {\{1,2,\cdots,p\}}\times G$
+ private/public key=$(x,X)\in \{1,2,\cdots,p\}\times G$
  
  $X=g^x$
  

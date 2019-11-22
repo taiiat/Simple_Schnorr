@@ -61,7 +61,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
  
  a generator $g$ of $G$,and a hash function $H$
  
- private/public key=$(x,X) \in $\{$1,2,\cdots,p$\}　\times G$
+ private/public key=$(x,X) \in $\{$1,2,\cdots,p$\}　$\times G$
  
  $X=g^x$
  
@@ -139,7 +139,7 @@ main idea
 their partial signature $s_i = r_i + c_ix_i$, defined as $c_i = H(⟨L⟩, Xi, R, m)$
 
 - $⟨L⟩$ is some unique encoding of the multiset of
-public keys $L$ = \{$X_1,\cdots, X_n\$}
+public keys $L$ = \{$X_1,\cdots, X_n$\}
 
 
 ###### HOWEVER
@@ -196,8 +196,8 @@ THe aggregate of just that key alone is $X = X^{H_{agg}(X_1)}$
 Wagner’s algorithmをつかうと、$O(2^2\sqrt{k})$timeでrogue-key attack
 
 ---
-use Wagner’s algorithm [Wag02] to find $n − 1$ integers $y_2 , . . . , y_n$
-n such that $\displaystyle \sum_{i=2}^n H_{agg}(\tilde{X_hg^y_i})$
+use Wagner’s algorithm [Wag02] to find $n − 1$ integers \{$y_2 , . . . , y_n$\}
+n such that $\sum_{i=2}^n H_{agg}(\tilde{X_hg^y_i})$
 
 
 ![alt](s1.png)

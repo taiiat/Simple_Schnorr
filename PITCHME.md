@@ -43,7 +43,7 @@
 
 n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当なuserの公開鍵を利用して
 
-$pk′_{n−t+1}, . . . , pk′_{n}$を計算して不正な$pk_1,...,pk_{n−t},pk′_{n−t+1},...,pk′_{n}$
+$\{pk′_{n−t+1}, \cdots , pk′_{n}\}$を計算して不正な$\{pk_1,\cdots,pk_{n−t},pk′_{n−t+1},\cdots,pk′_{n}\}$
 
 公開鍵の集合の作成を許してしまう。
 
@@ -55,7 +55,7 @@ $pk′_{n−t+1}, . . . , pk′_{n}$を計算して不正な$pk_1,...,pk_{n−t}
  
  a generator $g$ of $G$,and a hash function $H$
  
- private/public key=$(x,X)\in {{1,2\cdots,p}}\times G$
+ private/public key=$(x,X)\in {\{1,2,\cdots,p\}}\times G$
  
  $X=g^x$
  
@@ -79,7 +79,7 @@ $pk′_{n−t+1}, . . . , pk′_{n}$を計算して不正な$pk_1,...,pk_{n−t}
   
   multiset of all their public key
   
-  - $L={X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n}$
+  - $L=\{X_1=g^x_1,X_2=g^x_2,\cdots,X_n=g^x_n\}$
   
 +++
 #### Preparetion for Signatures() 

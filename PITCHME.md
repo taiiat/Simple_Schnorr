@@ -202,11 +202,8 @@ use Wagner’s algorithm [Wag02] to find $n − 1$ integers
 
 n s.t $\sum_{i=2}^n H_a(X_hg^{y_i})$
 
-$\sum_{i=0}^n H_{ag}(X_1)$
 
 
-
-+++
 
 ![alt](s1.png)
 

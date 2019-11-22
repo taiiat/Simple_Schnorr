@@ -45,7 +45,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
 
 $x_{n+1}$
 
-$\{x_{n−t+1},\cdots,x_n\}
+$\{x_{n−t+1},\cdots,x_n\}$
 
 \{p_1,\cdots,p_{n−t},p_{n−t+1},\cdots,p′_n\}$
 
@@ -59,7 +59,7 @@ $\{x_{n−t+1},\cdots,x_n\}
  
  a generator $g$ of $G$,and a hash function $H$
  
- private/public key=$(x,X)\in \{1,2,\cdots,p\}\times G$
+ private/public key=$(x,X)\in \{1,2,\cdots,p\}　\times G$
  
  $X=g^x$
  

@@ -193,14 +193,14 @@ multiple keys are controlled by the attacker.
 
 THe aggregate of just that key alone is $X = X^{H_{agg}(X_1)}$
 
-Wagner’s algorithmをつかうと、$O(2^2\sqrt{k})$timeでrogue-key attack
+Wagner’s algorithmをつかうと、$O(2^{2\sqrt{k}})$timeでrogue-key attack
 
 ---
 use Wagner’s algorithm [Wag02] to find $n − 1$ integers
 
 \{$y_2 ,\cdots, y_n$\}
 
-n such that $\sum_{i=2}^n H_{agg}(\tilde{X_hg^{y_i}})$
+n such that $\sum_{i=2}^n H_{agg}({X_hg^{y_i}})$
 
 
 

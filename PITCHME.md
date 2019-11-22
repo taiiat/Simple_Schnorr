@@ -61,7 +61,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
  
  a generator $g$ of $G$,and a hash function $H$
  
- private/public key=$(x,X) \in \{1,2,\cdots,p\}　\times G$
+ private/public key=$(x,X) \in $\{$1,2,\cdots,p$\}　\times G$
  
  $X=g^x$
  
@@ -139,7 +139,7 @@ main idea
 their partial signature $s_i = r_i + c_ix_i$, defined as $c_i = H(⟨L⟩, Xi, R, m)$
 
 - $⟨L⟩$ is some unique encoding of the multiset of
-public keys $L = \{X_1,\cdots, X_n\}$
+public keys $L$ = \{$X_1,\cdots, X_n\$}
 
 
 ###### HOWEVER

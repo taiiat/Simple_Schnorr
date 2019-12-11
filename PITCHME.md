@@ -60,7 +60,7 @@
 ##### ready for prove 
 
 
-<img src="forking4.png" width="400">
+<img src="forking4.png" width="700">
 
 
 +++
@@ -68,15 +68,15 @@
   
  
 
-<img src="forking5.png" width="400">
+<img src="forking5.png" width="700">
 
 +++
 
-<img src="forking6.png" width="400">
+<img src="forking6.png" width="700">
 
 +++
 
-<img src="forking7.png" width="400">
+<img src="forking7.png" width="700">
 
 +++
 

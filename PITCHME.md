@@ -61,7 +61,7 @@
 
 $E[x^2] \geq E[x]^2$
 
-$\sum_{i=0}^q x_i^2 $
+$\sum_{i=0}^q x_i^2 \geq \frac{1}{q} \sum_{i=0}^q x_i$
 
 
 

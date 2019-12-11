@@ -59,9 +59,6 @@
 +++
 ##### prove
 
-$E[x^2] \geq E[x]^2$
-
-$\sum_{i=0}^q x_i^2 $$\geq$$  \sum_{i=0}^q x_i$
 
 
 

@@ -50,7 +50,7 @@
 +++
 ##### forking algorithm
 
-  ![alt](forking.png)
+   <img src="forking.png" width="400">
   
  
 

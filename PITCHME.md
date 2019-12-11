@@ -52,7 +52,7 @@
 
   ![alt](forking.png)
   
-  ![alt](forking_2.png)
+ 
 
 
 

@@ -48,10 +48,7 @@
 そこでその確率を評価しようというもの
 
 +++
-\documentclass{article}
-\usepackage{newtxtext,newtxmath}
-\usepackage{algpseudocode}
-\pagestyle{empty}
+
 \begin{document}
     \begin{algorithmic}[1]
         \Procedure{Insertion-Sort}{$A$}

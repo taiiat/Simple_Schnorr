@@ -50,7 +50,7 @@
 +++
 ##### forking algorithm
 
-   <img src="forking.png" width="400">
+   <img src="forking3.png" width="400">
   
  
 

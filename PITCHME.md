@@ -246,7 +246,7 @@ use Wagner’s algorithm [Wag02] to find $n − 1$ integers
 
 \{$y_2 ,\cdots, y_n$\}
 
-n s.t $\sum_{i=2}^n H_{ag}(X_hg^{y_i})$
+n s.t $\sum_{i=2}^n H_a(X_hg^{y_i})$
 
 
 

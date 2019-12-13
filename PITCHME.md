@@ -150,7 +150,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
  
  then,combined into a single signature $(R, s)$
  
- - where $\displaystyle s = \sum_{i=0}^n s_i \pmod{p}$
+ - where $\displaystyle s = \sum_{i=1}^n s_i \pmod{p}$
  
   
 
@@ -198,7 +198,7 @@ public keys $L$ = \{$X_1,\cdots, X_n$\}
 
 $a_i=H_{agg}(X_i,L)$
 
-$\tilde{X}= \prod_{i=0}^n X_i^{a_i}$
+$\tilde{X}= \prod_{i=1}^n X_i^{a_i}$
   
 generates a random $r_1 ← Z_p$
 
@@ -217,7 +217,7 @@ $s_1=r_1+ca_1x_1 \pmod{p}$
 
 $s_1$を他者におくり、$s_i$を受け取る
 
-$\displaystyle s= \sum_{i=0}^n X_i^a_i$
+$\displaystyle s= \sum_{i=1}^n X_i^a_i$
 
 The signature is $σ = (R, s)$
 

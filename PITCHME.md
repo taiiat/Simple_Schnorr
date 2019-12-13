@@ -158,7 +158,7 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
 +++
  #### The validity of a signature $(R,s)$
  
- $g_{s} = R \tilde{X}^c$
+ $g^s = R \tilde{X}^c$
   
  $\tilde{X} =  \prod_{i=1}^n X_i $ and $c = H(\tilde{X},R,m)$
   

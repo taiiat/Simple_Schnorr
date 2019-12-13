@@ -97,6 +97,15 @@ n人のグループのうちt人が敵であるとして $1 ≤ t< n$が正当�
 
 偽の公開鍵の集合の作成を許してしまう。
 
++++
+
+#### key aggregation
+
+verifiers don’t need to know the original participants’ public keys anymore.
+
+
+they can just be given the aggregated key instead. I
+
 ---
 ##### Scheme of Schnorr
 

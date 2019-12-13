@@ -230,7 +230,9 @@ The signature is $σ = (R, s)$
 ---
 ##### Verification
 
-the verifier computes $a_i=H_{agg}(X_i,L)$
+the verifier computes 
+
+$a_i=H_{agg}(X_i,L)$
 
 
 ![alt](s2.png)

@@ -341,7 +341,7 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 
 +++
 
-
+<img src="l2proof.png" width="600">
 +++
 ##### lemma3
 
@@ -354,7 +354,7 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 ---
 ##### theorem
 
-
+<img src="throrem.png" width="600">
 
 +++
 <img src="thex3.png" width="600">

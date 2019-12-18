@@ -349,7 +349,7 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 
 +++
 
-<img src="thorem.png" width="600">
+<img src="lemma3.png" width="600">
 
 +++
 

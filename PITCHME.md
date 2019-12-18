@@ -304,13 +304,20 @@ Alice:R_1,Bob:R_2
 - Bob can $x_1=\frac{s_1-s′_1}{a_1(c-c′)}\pmod{p} $ 
 
 ---
-##### To avoid this problem
+##### Seculity of Musig
 
-each signer must ensure that whenever any $R_j$ sent by other cosigners or the message m changes,
++++
 
-his ri value changes unpredictably.
+任意の $t(k)$-時間アルゴリズムの攻撃者 $A$ に対して，十分大きなすべての
 
-randomness or a counter into the function fを導入することで解決
+$k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署名 Σ は，
+
+選択平文攻撃から存在敵偽造不可
+
+---
+
+
+<img src="theorem3.png" width="600">
 
 
 

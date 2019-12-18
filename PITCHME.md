@@ -322,10 +322,10 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 ---
 
 証明の流れ
-- lemma1(=A)
-- lemma2(algo B FL,A)
-- lemma3(algo C FL,B)
-- theorem(FL,C)
+- lemma1でFL
+- lemma2(algo B FL,A)でFLから$Pr(bad)$を除く
+- lemma3(algo C FL,B)で$(s,R)$から$\tilde{x}$
+- theorem(FL,C)で$\tilde{x_1}$,$\tilde{x_2}$から$\acute{x}$を求める
 
 
 
@@ -342,12 +342,27 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 +++
 
 
++++
+##### lemma3
+
+<img src="thorem3.png" width="600">
+
++++
+<img src="lemma3ex.png" width="600">
+
+
+---
+##### theorem
 
 
 
-
-
-
++++
+<img src="thex3.png" width="600">
++++
+<img src="thwx2.png" width="600">
++++
+<img src="thex1.png" width="600">
++++
 
 
 

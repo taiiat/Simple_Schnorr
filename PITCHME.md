@@ -322,18 +322,24 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 ---
 
 証明の流れ
-- forking lemmaA
-- lemma2(algo B forking lemma)
-- lemma3(algo C by forking lemma)
-- theorem
+- lemma1(=A)
+- lemma2(algo B FL,A)
+- lemma3(algo C FL,B)
+- theorem(FL,C)
+
+
+
 
 ---
 ##### lemma2
 
+<img src="lemma2.png" width="600">
 
++++
 
+<img src="lemma2_1.png" width="600">
 
-
++++
 
 
 

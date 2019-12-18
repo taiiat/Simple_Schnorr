@@ -319,6 +319,19 @@ $k$ で，$Adv^ΣA(k) ≤\epsilon(k)$が成立するとき，ディジタル署�
 
 <img src="thorem.png" width="600">
 
+---
+
+証明の流れ
+- forking lemmaA
+- lemma2(algo B forking lemma)
+- lemma3(algo C by forking lemma)
+- theorem
+
+---
+##### lemma2
+
+
+
 
 
 
